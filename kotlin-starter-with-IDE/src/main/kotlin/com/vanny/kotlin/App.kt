@@ -190,6 +190,18 @@ fun main() {
     for (i in array3){
         println(i)
     }
+
+//    task 12 (NPE/ null pointer exception)
+    val string_nih_ngab1 :String?= null // question mark after datatype mean that variable can store null value
+//    how to face this situation using if-else
+    if (string_nih_ngab1 != null){
+        println(string_nih_ngab1.length)
+    }else{
+        println("do whatever you want")
+    }
+
+
+    
 }
 
 
