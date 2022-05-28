@@ -45,4 +45,56 @@ fun main() {
     val angka1 :Int = 12
     val angka2 = 4.0
     println(angka1 + angka2)
+
+//    task 6 (char)
+//    char is like string but with '' instead of "",
+//    and we can doing increment or decrement with it
+//    since char is basically just unicode, for instance :
+//    A = 0041 if we doing increment it will give us 0042 which is B
+    var char_nih_bang : Char = 'A'
+    println("Ini huruf apa adek adek ? "+char_nih_bang)
+    println("Ini huruf apa adek adek ? "+char_nih_bang++) // anyway idk why it still return A
+    println("Ini huruf apa adek adek ? "+char_nih_bang++)
+    println("Ini huruf apa adek adek ? "+char_nih_bang++)
+    println("Ini huruf apa adek adek ? "+char_nih_bang--)
+    println("Ini huruf apa adek adek ? "+char_nih_bang--)
+    println("Ini huruf apa adek adek ? "+char_nih_bang--)
+    println("Ini huruf apa adek adek ? "+char_nih_bang--)
+
+// task 6 (string)
+// string bassically is an array set of char (unicode)
+// thats explained us why we can access element of string by index (indexing)
+    val string_nih = "Ucup"
+    val string_nah = string_nih[1] + string_nih[2].toString() + string_nih[3].toString()
+    println("Si " +
+            string_nih +
+            " \"si paling tidak keren\". " +
+            string_nah.uppercase() +
+            string_nah.reversed().uppercase()
+    )
+// define print_kotlin function
+    fun print_ucup(){
+        val name = """
+            Ucup
+            si
+            anak
+            nakal,
+            suka
+            mencuri
+            tugu
+            pancoran
+        """.trimIndent()
+        for (i in name){
+            if (i == '\n'){
+                print(" ")
+            } else{
+                print(i)
+            }
+        }
+    }
+//    call function above
+    print_ucup()
+
+//    task 7 (function)
+
 }
