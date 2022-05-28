@@ -192,14 +192,19 @@ fun main() {
     }
 
 //    task 12 (NPE/ null pointer exception)
-    val string_nih_ngab1 :String?= null // question mark after datatype mean that variable can store null value
-//    how to face this situation using if-else
+    val string_nih_ngab1 :String?= null // question mark after datatype mean that variable can store null value (nullable)
+//    how to face this situation using if-else (traditional way)
     if (string_nih_ngab1 != null){
         println(string_nih_ngab1.length)
     }else{
         println("do whatever you want")
     }
 
+//    handling nullable variable using save calls "?." and elvis operator "?:"
+//    save calls are used to anticipate (will skip it when face it) null value in variable
+//    elvis operator is like what we will do if our variable contain null value. for instance :
+
+    println(string_nih_ngab1?.length ?: "do whatever you want (using save calls and elvis operator)")
 
     
 }
