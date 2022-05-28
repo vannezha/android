@@ -206,6 +206,10 @@ fun main() {
 
     println(string_nih_ngab1?.length ?: "do whatever you want (using save calls and elvis operator)")
 
+//    task 13 (string template)
+//    string template : we can insert a variable without concatenate it
+    println("perkenalkan namaku ${nama.uppercase()}, umurku ${(angka1+angka2).toInt()} tahun")
+
     
 }
 
