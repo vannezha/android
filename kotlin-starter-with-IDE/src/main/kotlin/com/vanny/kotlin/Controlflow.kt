@@ -31,7 +31,12 @@ fun main(){
         Color.BLUE -> println("color is BLUE")
     }
 
-    
+//    task 2 (expression and statement)
+//    expression doesnt do initialitate, return or calculate something, statement otherwise
+//    like if-else, it is can be written as expression or statement (tenary but in different order if we learn python)
+//    because expression just like ordinary if-else, i'll skip it. this is if-else statement
+    val kebenaran = if (true) "ini statement true" else "ini statement false" // tenary : trueaction if truecond else falseaction
+    println(kebenaran)
 
 
 }
