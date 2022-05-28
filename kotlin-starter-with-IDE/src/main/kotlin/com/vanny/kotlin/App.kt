@@ -1,5 +1,7 @@
 package com.vanny.kotlin
 
+import kotlin.reflect.typeOf
+
 // single line comment
 
 /*
@@ -138,8 +140,38 @@ fun main() {
     val isgatemove = now == gateopen || now == gateclose
     val isnotSame = gateopen != gateclose
 
+//    task 10 (number)
+//    because i learn python a lot before. here is my way to remember number type in kotlin
+//    usually in python we just use int or float without any fafifu
+//    int64 = Long
+    var angka4 = 123L
+    println(angka4)
+//    int32 = Int
+    var angka5 = 123
+    println(angka5)
+//    int16 = Short
+    var angka6 = 123
+    println(angka6)
+//    int8 = Byte
+    val bytenum = 0b11010010
+    println(bytenum)
+//    float64 = Double
+//    15-16 behind commas
+    val doubleNumber: Double = 1.3
+//    float32 = Float
+//    6-7 behind commas
+    val floatNumber: Float = 0.123456789f //yang terbaca hanya 0.1234567
 
-
+//    casting datatype
+    var tenK = 10_000 //readable integer (kotlin feature)
+    println(tenK.toString())
+    println(tenK.toInt())
+    println(tenK.toByte())
+    println(tenK.toChar())
+    println(tenK.toFloat())
+    println(tenK.toDouble())
+    println(tenK.toLong())
+    println(tenK.toShort())
 }
 
 
