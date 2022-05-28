@@ -91,10 +91,43 @@ fun main() {
                 print(i)
             }
         }
+    println()
     }
 //    call function above
     print_ucup()
 
 //    task 7 (function)
+//    here is the default structure of kotlin function
+//    fun functionName(param1: Type1, param2: Type2, ...): ReturnType {
+//    return result
+//    }
+    fun nama1(nama:String):String{
+        return "nama saya $nama"
+    }
+    println(nama1("otong"))
 
+//    we can type function like this if utility of this function just to return something
+//    fun functionName(param1: Type1, param2: Type2, ...): ReturnType = ReturnValue
+    fun nama2(nama:String):String="nama saya $nama"
+    println(nama2("otong2"))
+//    we can declare function inside or outside main function :3
+    println(aku())
+
+//    kotlin can make a function without returntype as well with change return type to Unit
+//    or we can ignore it since kotlin think its redundant thing
+    akudenganUnit()
+    akutanpaUnit() //check detail function bellow
+
+
+}
+
+
+
+fun aku():String="Aku uwu sekaliiiiiii... ihihihi"
+fun akudenganUnit():Unit{
+    println("no return value with Unit")
+}
+
+fun akutanpaUnit(){
+    println("no return value without Unit nih ngab")
 }
