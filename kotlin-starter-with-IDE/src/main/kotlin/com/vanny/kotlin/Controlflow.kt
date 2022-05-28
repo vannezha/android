@@ -72,9 +72,6 @@ fun main(){
         if (indeks == 81) continue
     }
 
-
-
-
 }
 
 // task 1 class
