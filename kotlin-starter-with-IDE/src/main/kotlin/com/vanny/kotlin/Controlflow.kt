@@ -29,6 +29,21 @@ fun main(){
         Color.RED -> println("color is RED")
         Color.GREEN -> println("color is GREEN")
         Color.BLUE -> println("color is BLUE")
+        else -> {
+            println("color cant be find")
+            "this \"else\" will return this line after print something"
+        }
+    }
+//    we can use "is" and "in" like python as well
+    var tipe = "hahahihi"
+    when(tipe){
+        is String -> println("ini string")
+        else -> println("bukan string")
+    }
+    var range = 10..100
+    when (val rentang = 33){
+        in range -> println("$rentang didalam range")
+        else -> println("$rentang tidak didalam range")
     }
 
 //    task 2 (expression and statement)
