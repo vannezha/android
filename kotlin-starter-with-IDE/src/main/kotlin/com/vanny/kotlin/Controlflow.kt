@@ -52,6 +52,27 @@ fun main(){
 //    because expression just like ordinary if-else, i'll skip it. this is if-else statement
     val kebenaran = if (true) "ini statement true" else "ini statement false" // tenary : trueaction if truecond else falseaction
     println(kebenaran)
+//    task 3 (do while and while loop)
+//    exactly same as do while and while loop in C language
+
+//    task 4 (for loop and range)
+    var rangeExample = 1..100 step 5
+    rangeExample.forEach{i -> print("$i ") }
+    var rangeEx = 1.rangeTo(100) step 5
+    rangeEx.forEach{ i -> print("$i ")}
+    rangeEx = 100.downTo(1) step 5
+    rangeEx.forEach{ i -> print("$i ")}
+    var rangeExa = 'A'.rangeTo('Z')
+    rangeExa.forEach{ i -> print("$i ")}
+
+    println()
+    for (indeks in 1..100 step 5){
+        print(indeks)
+        if (indeks == 86) break
+        if (indeks == 81) continue
+    }
+
+
 
 
 }
