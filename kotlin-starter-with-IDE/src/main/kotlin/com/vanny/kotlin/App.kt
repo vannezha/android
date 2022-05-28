@@ -118,7 +118,17 @@ fun main() {
     akudenganUnit()
     akutanpaUnit() //check detail function bellow
 
-
+// task 8 (if-else)
+    val angka3 = 3
+    var angka:Int? = 2 // we will learn null safety later
+    if (angka3 > 10){
+        angka = angka3
+    }else if(angka3 > 5){
+        angka = 5
+    }else{
+        angka = null
+    }
+    println("ini nilai dari angka $angka")
 }
 
 
