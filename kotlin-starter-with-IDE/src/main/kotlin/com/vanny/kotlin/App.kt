@@ -172,6 +172,24 @@ fun main() {
     println(tenK.toDouble())
     println(tenK.toLong())
     println(tenK.toShort())
+
+//    task 11 (array) --> like string explisitly
+//    traditional array writing in kotlin (we can ignore it)
+//    intArrayOf() : IntArray
+//    booleanArrayOf() : BooleanArray
+//    charArrayOf() : CharArray
+//    longArrayOf() : LongArray
+//    shortArrayOf() : ShortArray
+//    byteArrayOf() : ByteArray
+    val array1 = arrayOf(1,2,3,4)
+    array1[2] = 12 // we can do this because we change value inside array, not that array
+    val array2 = arrayOf(1,2,"ujang", "selalu", false)
+    println(array1[2])
+    println(array2[4])
+    val array3 = Array(10, {x -> x * x}) // 2nd parameter called lambda function, we learn after this
+    for (i in array3){
+        println(i)
+    }
 }
 
 
