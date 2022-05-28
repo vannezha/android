@@ -113,8 +113,8 @@ fun main() {
 //    we can declare function inside or outside main function :3
     println(aku())
 
-//    kotlin can make a function without returntype as well with change return type to Unit
-//    or we can ignore it since kotlin think its redundant thing
+//    kotlin can make a function without returntype as well with change returntype to "Unit"
+//    or we can ignore it since kotlin think it is redundant thing
     akudenganUnit()
     akutanpaUnit() //check detail function bellow
 
@@ -129,6 +129,17 @@ fun main() {
         angka = null
     }
     println("ini nilai dari angka $angka")
+
+//    task 9 (boolean)
+    val gateopen = 7
+    val gateclose = 22
+    var now = 19
+    val isOpen = now >= gateopen && now <= gateclose
+    val isgatemove = now == gateopen || now == gateclose
+    val isnotSame = gateopen != gateclose
+
+
+
 }
 
 
