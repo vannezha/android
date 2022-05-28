@@ -17,6 +17,11 @@ fun main(){
     println(color.name)
     println(color.budi)
     println(color.ordinal)
+    color.signal()
+    Color.RED.signal()
+    println(Color.RED.signal())
+    Color.RED.privatefunction()
+//nb : enum object can call function of enum class and can override it
 
 //    when expression
     var warna = Color.RED
@@ -26,17 +31,34 @@ fun main(){
         Color.BLUE -> println("color is BLUE")
     }
 
+    
 
 
 }
 
-// task 1 class 
+// task 1 class
 enum class Warna{
     RED,GREEN,BLUE
 }
 
-enum class Color (val budi :Int){
-    RED(0xFF0000),
+enum class Color (val budi :Int?){
+    RED(null){
+                    override fun signal():Int?{
+                        println("this is red signal")
+                        return this?.budi ?: 123456
+                    }
+                 },
     GREEN(0x00FF00),
-    BLUE(0x0000FF),
+    BLUE(0x0000FF),;
+
+//    we make this open because we need to override it (it is "final" if we are not "open" it)
+    open fun signal() :Int?{
+        println("this is default signal")
+        return null
+    }
+
+    fun privatefunction(){
+        println("this is private function")
+    }
+
 }
