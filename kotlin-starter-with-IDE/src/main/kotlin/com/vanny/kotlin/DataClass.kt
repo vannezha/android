@@ -1,3 +1,5 @@
+package com.vanny.kotlin
+
 fun main(){
     var user1 = DataUser("ucup",17)
     var user2 = DataUser("ucup",17)
