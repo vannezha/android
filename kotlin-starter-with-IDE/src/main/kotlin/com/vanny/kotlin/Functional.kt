@@ -118,6 +118,33 @@ fun main() {
 
 
 
+// member refference (separate lambda function and reference it as instance of function class)
+//    before separate lambda
+    val sum1: (Int,Int) -> Int = {value1,value2 -> value1 + value2}
+    println(sum1(123,211))
+//    after separate lambda
+    val sum: (Int,Int) -> Int = ::count
+    println(count(12,21))
+
+//    function referencce
+    println(20.isEvenNumber())
+    val number = 1.rangeTo(20) // or we can write it as 1..20
+    println(number.filter{i -> i.isEvenNumber()})
+//    or we can write it like this
+    println(number.filter(Int::isEvenNumber))
+
+//    property reference
+    var message3 = "kucing uwu"
+    println(::contohreturnstring.name)
+    println(::contohreturnstring.isFinal)
+    println(::contohreturnstring.returnType)
+
+//    kotlin allow us to declare function inside function as well,
+//    i will not doing this because yeah, we can imagine it hehe
+//    or in my opinion we have done that in previous task
+
+
+
 
 
 
@@ -125,6 +152,8 @@ fun main() {
 
 
 }
+
+
 // =====================================================================================================================
 // =====================================================================================================================
 // =====================================================================================================================
@@ -184,4 +213,15 @@ fun buildstringwithlambda(act: StringBuilder.() -> Unit):String{
     val result = StringBuilder()
     result.act()
     return result.toString()
+}
+
+fun count(value1: Int, value2: Int): Int {
+    return value1 + value2
+}
+
+fun Int.isEvenNumber() = this % 2 == 0
+
+private fun contohreturnstring():String {
+  var kata = "ini adalah string"
+  return kata
 }
