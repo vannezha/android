@@ -4,7 +4,7 @@ fun main(){
 // task 1 (list)
 //    default value list in kotlin (listOf) is set to immutable, we can assume kotlin list equal to tuple in python
 //    if we want to change it to mutable we should define it as mutableListOf -> its behaviour is same as list in python
-    val list : List<Any> = listOf(1,'A',"ucup surucup", DummyUser("otong surotong"),false)
+    val list = listOf(1,'A',"ucup surucup", DummyUser("otong surotong"),false)
 //    list[1] = 'B' -> will throw an error because default "list" is immutable
 //    of course we can ignore type above, i want to write it to know how it work defaultly
     println(list)
