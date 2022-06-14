@@ -1,0 +1,1 @@
+package com.vannezha.genchardata class Genchar(    var name:String = "",    var rarity:Int = 0,    var vision:Int = 0,    var region:String = "",    var constellation:String = "",    var birthday:String = "",    var title:String = "",    var description : String = "",    var photo : Int = 0)

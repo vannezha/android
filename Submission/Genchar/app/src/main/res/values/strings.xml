@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Genshin</string>
+    <string name="genchar_name">Genchar Name</string>
+    <string name="detail">Detail</string>
+    <string name="vision">Vision</string>
+    <string name="rarity">Rarity</string>
+    <string name="test_about">Zhongli (Chinese: 钟离 Zhōnglí) is a playable Geo character in Genshin Impact.\n\nHe is a consultant of the Wangsheng Funeral Parlor. He is later revealed to be the current vessel of the Geo Archon, Morax, who has decided to experience the world from the perspective of a mortal.</string>
+    <string name="name">Name</string>
+    <string name="region">Region</string>
+    <string name="constellation">Constellation</string>
+    <string name="birthday">Birthday</string>
+    <string name="title">Title</string>
+    <string name="bio">Bio</string>
+    <string name="about">About</string>
+    <string name="myName">Vanny Ezhaan Nur Sandika</string>
+    <string name="myEmail">m2004f0241@bangkit.academy</string>
+    <string name="myUID">Genshin UID : 832418899</string>
+
+</resources>
